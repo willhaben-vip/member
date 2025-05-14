@@ -1,11 +1,12 @@
 <?php
 /**
- * Redirect Service for willhaben.vip
+ * Unified Redirect Service for willhaben.vip
  *
  * This script handles redirects from willhaben.at URLs to willhaben.vip URLs
- * for both seller profiles and product pages.
+ * for both seller profiles and product pages. It combines the best features
+ * of both index.php and index-rr.php files.
  *
- * @version 1.0.0
+ * @version 1.1.0
  */
 
 // Error handling
@@ -19,6 +20,26 @@ define('SELLER_MAP', [
     '34434899' => 'rene.kapusta'
 ]);
 
+// Custom RedirectException
+class RedirectException extends Exception {
+    private $url;
+    private $status;
+
+    public function __construct($url, $status = 302) {
+        $this->url = $url;
+        $this->status = $status;
+        parent::__construct("Redirect to: " . $url);
+    }
+
+    public function getUrl() {
+        return $this->url;
+    }
+
+    public function getStatus() {
+        return $this->status;
+    }
+}
+
 /**
  * Log message to file
  *
@@ -30,6 +51,12 @@ function logMessage($message)
     $timestamp = date('Y-m-d H:i:s');
     $logEntry = "[{$timestamp}] {$message}" . PHP_EOL;
 
+    // Ensure log directory exists
+    $logDir = dirname(LOG_FILE);
+    if (!is_dir($logDir)) {
+        mkdir($logDir, 0755, true);
+    }
+
     // Write to log file
     file_put_contents(LOG_FILE, $logEntry, FILE_APPEND);
 }
@@ -38,17 +65,17 @@ function logMessage($message)
  * Redirect to the specified URL
  *
  * @param string $url URL to redirect to
+ * @param int $status HTTP status code for redirect
  * @return void
+ * @throws RedirectException
  */
-function redirectTo($url)
+function redirectTo($url, $status = 301)
 {
     // Log the redirect
     logMessage("Redirecting to: {$url}");
 
-    // Send redirect headers
-    header("HTTP/1.1 301 Moved Permanently");
-    header("Location: {$url}");
-    exit;
+    // Throw RedirectException instead of directly sending headers
+    throw new RedirectException($url, $status);
 }
 
 /**
@@ -78,6 +105,37 @@ function verifySellerAndGetSlug($sellerId)
     }
 
     return false;
+}
+
+/**
+ * Serve a static file with proper MIME type
+ *
+ * @param string $filePath Path to the file
+ * @return void
+ */
+function serveStaticFile($filePath)
+{
+    // Set appropriate content type
+    $mimeTypes = [
+        'jpg' => 'image/jpeg',
+        'jpeg' => 'image/jpeg',
+        'png' => 'image/png',
+        'gif' => 'image/gif',
+        'css' => 'text/css',
+        'js' => 'application/javascript',
+        'xml' => 'application/xml',
+        'html' => 'text/html',
+        'htm' => 'text/html',
+        'pdf' => 'application/pdf',
+        'svg' => 'image/svg+xml'
+    ];
+
+    $extension = strtolower(pathinfo($filePath, PATHINFO_EXTENSION));
+    $contentType = isset($mimeTypes[$extension]) ? $mimeTypes[$extension] : 'application/octet-stream';
+
+    header('Content-Type: ' . $contentType);
+    readfile($filePath);
+    exit;
 }
 
 try {
@@ -126,35 +184,30 @@ try {
         $filePath = __DIR__ . $requestPath;
 
         if (file_exists($filePath) && is_file($filePath)) {
-            // Set appropriate content type
-            $mimeTypes = [
-                'jpg' => 'image/jpeg',
-                'jpeg' => 'image/jpeg',
-                'png' => 'image/png',
-                'gif' => 'image/gif',
-                'css' => 'text/css',
-                'js' => 'application/javascript',
-                'xml' => 'application/xml',
-                'html' => 'text/html',
-                'htm' => 'text/html'
-            ];
-
-            $extension = strtolower(pathinfo($filePath, PATHINFO_EXTENSION));
-            $contentType = isset($mimeTypes[$extension]) ? $mimeTypes[$extension] : 'application/octet-stream';
-
-            header('Content-Type: ' . $contentType);
-            readfile($filePath);
-            exit;
+            logMessage("Serving static file: {$filePath}");
+            serveStaticFile($filePath);
+        } else {
+            // Default: redirect to homepage
+            logMessage("No matching patterns, redirecting to homepage");
+            redirectTo(BASE_URL);
         }
-
-        // Default: redirect to homepage
-        logMessage("No matching patterns, redirecting to homepage");
-        redirectTo(BASE_URL);
     }
+} catch (RedirectException $e) {
+    // Handle the redirect
+    header("HTTP/1.1 {$e->getStatus()} Moved Permanently");
+    header("Location: {$e->getUrl()}");
+    exit;
 } catch (\Throwable $e) {
     // Log error
     logMessage("Error: " . $e->getMessage() . "\nStack trace: " . $e->getTraceAsString());
 
     // Redirect to homepage in case of error
-    redirectTo(BASE_URL);
+    try {
+        redirectTo(BASE_URL);
+    } catch (RedirectException $re) {
+        header("HTTP/1.1 {$re->getStatus()} Moved Permanently");
+        header("Location: {$re->getUrl()}");
+        exit;
+    }
 }
+
