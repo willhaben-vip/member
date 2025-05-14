@@ -1,0 +1,21 @@
+# Enable rewrite engine
+RewriteEngine On
+
+# Set base directory
+RewriteBase /
+
+# Redirect seller profile URLs
+# Example: /iad/kaufen-und-verkaufen/verkaeuferprofil/34434899 -> /rene.kapusta
+RewriteCond %{REQUEST_URI} ^/iad/kaufen-und-verkaufen/verkaeuferprofil/34434899/?$ [NC]
+RewriteRule .* https://willhaben.vip/rene.kapusta/ [R=301,L]
+
+# Redirect product URLs
+# Example: /iad/kaufen-und-verkaufen/d/gross-groesser-am-groessten-1998346331 -> /rene.kapusta/gross-groesser-am-groessten-1998346331
+RewriteCond %{REQUEST_URI} ^/iad/kaufen-und-verkaufen/d/([\w-]+)-([0-9]+)/?$ [NC]
+RewriteRule ^iad/kaufen-und-verkaufen/d/([\w-]+)-([0-9]+)/?$ https://willhaben.vip/rene.kapusta/$1-$2 [R=301,L]
+
+# If the file or directory does not exist, try the fallback index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L]
+

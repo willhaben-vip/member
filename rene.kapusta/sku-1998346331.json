@@ -1,0 +1,81 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Groß, größer, am größten",
+    "description": "Groß, größer, am größten. 12.808.286 Angebote. Günstig kaufen und gratis inserieren auf willhaben - der größte Marktplatz Österreichs.",
+    "sku": "1998346331",
+    "image": "https://cache.willhaben.at/mmo/1/199/834/6331_703655248.jpg",
+    "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/gross-groesser-am-groessten-1998346331/",
+    "offers": {
+      "@type": "Offer",
+      "price": "9",
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2025-06-18",
+      "availability": "InStock",
+      "itemCondition": "UsedCondition",
+      "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/gross-groesser-am-groessten-1998346331/",
+      "seller": {
+        "@type": "Person",
+        "givenName": "Rene"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "#breadcrumbs",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": {
+          "@type": "Thing",
+          "id": "https://www.willhaben.at/iad",
+          "url": "https://www.willhaben.at/iad"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Marktplatz",
+        "item": {
+          "@type": "Thing",
+          "id": "https://www.willhaben.at/iad/kaufen-und-verkaufen/",
+          "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Bücher / Filme / Musik",
+        "item": {
+          "@type": "Thing",
+          "id": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/buecher-filme-musik-387",
+          "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/buecher-filme-musik-387"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Kinder- / Jugendbücher",
+        "item": {
+          "@type": "Thing",
+          "id": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/kinder-jugendbuecher-2969",
+          "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/kinder-jugendbuecher-2969"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Sachbücher",
+        "item": {
+          "@type": "Thing",
+          "id": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/kinder-jugendbuecher/sachbuecher-2975",
+          "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz/kinder-jugendbuecher/sachbuecher-2975"
+        }
+      }
+    ]
+  }
+]
