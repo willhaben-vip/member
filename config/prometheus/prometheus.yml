@@ -1,0 +1,57 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  scrape_timeout: 10s
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets:
+      - 'alertmanager:9093'
+
+# Load rules once and periodically evaluate them
+rule_files:
+  - "willhaben_alerts.yml"
+
+scrape_configs:
+  - job_name: 'willhaben_vip'
+    scrape_interval: 30s
+    scrape_timeout: 10s
+    metrics_path: '/metrics'
+    basic_auth:
+      username: 'prometheus'
+      password: 'willhaben_metrics'  # Change this in production!
+    static_configs:
+      - targets: ['willhaben.vip:443']
+        labels:
+          env: 'production'
+          service: 'redirect'
+    
+    # Add TLS configuration for HTTPS
+    scheme: https
+    tls_config:
+      insecure_skip_verify: false
+
+  # Add additional instances as needed
+  #- job_name: 'willhaben_vip_staging'
+  #  scrape_interval: 30s
+  #  metrics_path: '/metrics'
+  #  basic_auth:
+  #    username: 'prometheus'
+  #    password: 'willhaben_metrics'
+  #  static_configs:
+  #    - targets: ['staging.willhaben.vip:443']
+  #      labels:
+  #        env: 'staging'
+  #        service: 'redirect'
+
+  # System monitoring (optional)
+  - job_name: 'node_exporter'
+    scrape_interval: 15s
+    static_configs:
+      - targets: ['node-exporter:9100']
+        labels:
+          env: 'production'
+          server: 'willhaben-redirect-01'
+

@@ -1,0 +1,3 @@
+# Test cron file for willhaben maintenance
+0 1 * * * /Users/rene/k42/instantpay/code/INSTANTpay/willhaben.vip/member/bin/backup.sh --type=full
+0 * * * * /Users/rene/k42/instantpay/code/INSTANTpay/willhaben.vip/member/bin/maintenance.sh --all
