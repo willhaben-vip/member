@@ -1,68 +1,159 @@
-# Rene's Verkäuferprofil - willhaben VIP
+# 🛍️ Rene's Verkäuferprofil - willhaben VIP
 
-> Seller profile of Rene located at 3100 St. Pölten with top ratings on PayLivery. Quick response time within 10 minutes.
+[![Verified Seller](https://img.shields.io/badge/Verified-Seller-success)](https://www.willhaben.at/iad/kaufen-und-verkaufen/verkaeuferprofil/34434899)
+[![Rating](https://img.shields.io/badge/Rating-5%2F5-gold)](https://www.willhaben.at/iad/kaufen-und-verkaufen/verkaeuferprofil/34434899)
+[![Location](https://img.shields.io/badge/Location-St.%20P%C3%B6lten-blue)](https://www.willhaben.at/iad/kaufen-und-verkaufen/verkaeuferprofil/34434899)
 
-## Verkäufer Information | Seller Information
+> 📌 **Seller profile of Rene located at 3100 St. Pölten with top ratings on PayLivery. Quick response time within 10 minutes.**
 
-| Information | Details |
-|------------|---------|
-| 📍 Standort / Location | 3100 St. Pölten |
-| ⭐ Bewertung / Rating | ★★★★★ (5/5 on PayLivery) |
-| 🕒 Antwortzeit / Response Time | < 10 Minuten / minutes |
-| 📅 Mitglied seit / Member since | Mai 2025 |
-| 🆔 Seller ID | 34434899 |
-| 📦 Versand / Shipping | Post, Selbstabholung / Pickup |
+<div align="center">
 
-## Aktuelle Angebote | Current Offers
+*Willkommen bei meinem Verkäuferprofil! | Welcome to my seller profile!*
 
-### 1. Groß, größer, am größten
-- **Beschreibung**: Buch - Deutsch, gebraucht
-- **Preis / Price**: 9,00 €
-- **ID**: 1998346331
-- **Links**:
-  - [willhaben.at Marketplace](https://www.willhaben.at/iad/kaufen-und-verkaufen/d/gross-groesser-am-groessten-1998346331/)
-  - [willhaben.vip](https://www.willhaben.vip/marketplace/1998346331)
+</div>
 
-### 2. 10 x DVD - Kinder: ab 0 / [1]6
-- **Beschreibung**: Kinder-DVDs, gebraucht
-- **Preis / Price**: 12,00 €
-- **ID**: 1141031082
-- **Links**:
-  - [willhaben.at Marketplace](https://www.willhaben.at/iad/kaufen-und-verkaufen/d/10-x-dvd-kinder-ab-0-1-6-1141031082/)
-  - [willhaben.vip](https://www.willhaben.vip/marketplace/1141031082)
+---
 
-### 3. 4x Kinder-Hörspiel CD
-- **Beschreibung**: Kinder-Hörspiel CDs, gebraucht
-- **Preis / Price**: 8,00 €
-- **ID**: 1067862407
-- **Links**:
-  - [willhaben.at Marketplace](https://www.willhaben.at/iad/kaufen-und-verkaufen/d/4x-kinder-hoerspiel-cd-1067862407/)
-  - [willhaben.vip](https://www.willhaben.vip/marketplace/1067862407)
+## 👤 Verkäufer Information | Seller Information
 
-### 4. tiptoi Buch
-- **Beschreibung**: Interaktives Kinderbuch, gebraucht
-- **Preis / Price**: 7,00 €
-- **ID**: 2054287371
-- **Links**:
-  - [willhaben.at Marketplace](https://www.willhaben.at/iad/kaufen-und-verkaufen/d/tiptoi-buch-2054287371/)
-  - [willhaben.vip](https://www.willhaben.vip/marketplace/2054287371)
+| 🔍 Information | ℹ️ Details |
+|:--------------:|:----------:|
+| 📍 **Standort / Location** | 3100 St. Pölten |
+| ⭐ **Bewertung / Rating** | ★★★★★ (5/5 on PayLivery) |
+| 🕒 **Antwortzeit / Response Time** | < 10 Minuten / minutes |
+| 📅 **Mitglied seit / Member since** | Mai 2025 |
+| 🆔 **Seller ID** | 34434899 |
+| 📦 **Versand / Shipping** | Post, Selbstabholung / Pickup |
 
-### 5. tiptoi Buch - Wir entdecken den Weltraum
-- **Beschreibung**: Interaktives Kinderbuch, Weltraum-Thema, gebraucht
-- **Preis / Price**: 10,00 €
-- **ID**: 1400993190
-- **Links**:
-  - [willhaben.at Marketplace](https://www.willhaben.at/iad/kaufen-und-verkaufen/d/tiptoi-buch-keine-versandkosten-wir-entdecken-den-weltraum-1400993190/)
-  - [willhaben.vip](https://www.willhaben.vip/marketplace/1400993190)
-- **Besonderheit**: Keine Versandkosten / Free shipping
+---
 
-### 6. tiptoi Buch - die Welt der Fahrzeuge
-- **Beschreibung**: Interaktives Kinderbuch, Fahrzeug-Thema, gebraucht
-- **Preis / Price**: 8,00 €
-- **ID**: 1512364712
-- **Links**:
-  - [willhaben.at Marketplace](https://www.willhaben.at/iad/kaufen-und-verkaufen/d/tiptoi-buch-die-welt-der-fahrzeuge-1512364712/)
-  - [willhaben.vip](https://www.willhaben.vip/marketplace/1512364712)
+## 🏷️ Aktuelle Angebote | Current Offers
+
+<table>
+  <tr>
+    <td width="70%">
+      <h3>📚 1. Groß, größer, am größten</h3>
+      <ul>
+        <li><strong>Beschreibung</strong>: Buch - Deutsch, gebraucht</li>
+        <li><strong>ID</strong>: 1998346331</li>
+        <li><strong>Links</strong>:
+          <ul>
+            <li><a href="https://www.willhaben.at/iad/kaufen-und-verkaufen/d/gross-groesser-am-groessten-1998346331/">willhaben.at Marketplace</a></li>
+            <li><a href="https://www.willhaben.vip/marketplace/1998346331">willhaben.vip</a></li>
+          </ul>
+        </li>
+      </ul>
+    </td>
+    <td width="30%" align="center">
+      <h3>💰 9,00 €</h3>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="70%">
+      <h3>📀 2. 10 x DVD - Kinder: ab 0 / [1]6</h3>
+      <ul>
+        <li><strong>Beschreibung</strong>: Kinder-DVDs, gebraucht</li>
+        <li><strong>ID</strong>: 1141031082</li>
+        <li><strong>Links</strong>:
+          <ul>
+            <li><a href="https://www.willhaben.at/iad/kaufen-und-verkaufen/d/10-x-dvd-kinder-ab-0-1-6-1141031082/">willhaben.at Marketplace</a></li>
+            <li><a href="https://www.willhaben.vip/marketplace/1141031082">willhaben.vip</a></li>
+          </ul>
+        </li>
+      </ul>
+    </td>
+    <td width="30%" align="center">
+      <h3>💰 12,00 €</h3>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="70%">
+      <h3>🎵 3. 4x Kinder-Hörspiel CD</h3>
+      <ul>
+        <li><strong>Beschreibung</strong>: Kinder-Hörspiel CDs, gebraucht</li>
+        <li><strong>ID</strong>: 1067862407</li>
+        <li><strong>Links</strong>:
+          <ul>
+            <li><a href="https://www.willhaben.at/iad/kaufen-und-verkaufen/d/4x-kinder-hoerspiel-cd-1067862407/">willhaben.at Marketplace</a></li>
+            <li><a href="https://www.willhaben.vip/marketplace/1067862407">willhaben.vip</a></li>
+          </ul>
+        </li>
+      </ul>
+    </td>
+    <td width="30%" align="center">
+      <h3>💰 8,00 €</h3>
+    </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td width="70%">
+      <h3>📚 4. tiptoi Buch</h3>
+      <ul>
+        <li><strong>Beschreibung</strong>: Interaktives Kinderbuch, gebraucht</li>
+        <li><strong>ID</strong>: 2054287371</li>
+        <li><strong>Links</strong>:
+          <ul>
+            <li><a href="https://www.willhaben.at/iad/kaufen-und-verkaufen/d/tiptoi-buch-2054287371/">willhaben.at Marketplace</a></li>
+            <li><a href="https://www.willhaben.vip/marketplace/2054287371">willhaben.vip</a></li>
+          </ul>
+        </li>
+      </ul>
+    </td>
+    <td width="30%" align="center">
+      <h3>💰 7,00 €</h3>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="70%">
+      <h3>🚀 5. tiptoi Buch - Wir entdecken den Weltraum</h3>
+      <ul>
+        <li><strong>Beschreibung</strong>: Interaktives Kinderbuch, Weltraum-Thema, gebraucht</li>
+        <li><strong>ID</strong>: 1400993190</li>
+        <li><strong>Besonderheit</strong>: <span style="background-color:#28a745; color:white; padding:2px 6px; border-radius:3px;">✨ Keine Versandkosten / Free shipping</span></li>
+        <li><strong>Links</strong>:
+          <ul>
+            <li><a href="https://www.willhaben.at/iad/kaufen-und-verkaufen/d/tiptoi-buch-keine-versandkosten-wir-entdecken-den-weltraum-1400993190/">willhaben.at Marketplace</a></li>
+            <li><a href="https://www.willhaben.vip/marketplace/1400993190">willhaben.vip</a></li>
+          </ul>
+        </li>
+      </ul>
+    </td>
+    <td width="30%" align="center">
+      <h3>💰 10,00 €</h3>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="70%">
+      <h3>🚗 6. tiptoi Buch - die Welt der Fahrzeuge</h3>
+      <ul>
+        <li><strong>Beschreibung</strong>: Interaktives Kinderbuch, Fahrzeug-Thema, gebraucht</li>
+        <li><strong>ID</strong>: 1512364712</li>
+        <li><strong>Links</strong>:
+          <ul>
+            <li><a href="https://www.willhaben.at/iad/kaufen-und-verkaufen/d/tiptoi-buch-die-welt-der-fahrzeuge-1512364712/">willhaben.at Marketplace</a></li>
+            <li><a href="https://www.willhaben.vip/marketplace/1512364712">willhaben.vip</a></li>
+          </ul>
+        </li>
+      </ul>
+    </td>
+    <td width="30%" align="center">
+      <h3>💰 8,00 €</h3>
+    </td>
+  </tr>
+</table>
 
 ### 7. tiptoi Buch
 - **Beschreibung**: Interaktives Kinderbuch, gebraucht
